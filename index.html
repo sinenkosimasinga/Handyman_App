@@ -5,17 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
     <style>
-        nav ul {
-            display: flex;
-            justify-content: space-between;
-            background-color: black;
-            font-size: large;
-            font-weight: bold;
-        }
-        nav li {
-            flex: auto ;
-        }
         .main{
             background-color: rgb(23, 41, 75);
             
@@ -39,6 +30,9 @@
         h3{
             color: darkblue;
         }
+        img{
+            width: 50%;
+        }
     </style>
 </head>
 <body>
@@ -46,27 +40,25 @@
 
         <div class="main">
             <div class="nav">
-                <nav>
-                    <ul>
-                        <li><a href="#"><h3>Home</h3></a></li>
-                        <li><a href="#"><h3>Dashbord</h3></a></li>
-                        <li><h3>Register</h3>
-                        <select><option value="select">select option</option>
-                            <option value="doctor">doctor</option>
-                            <option value="patiant">patiant</option></select>
-                            <a href="registration.html" class="t">register</a></li>
-                        <!--<li><a href="#"><h3>Register</h3> </a></li>-->
-                        <li><h3>Patiant</h3><a href="patiantlogin.html">
-                            <option class="t" value="login">login</option></a></li>
-                        <li><h3>Doctor</h3><a href="doctorlogin.html">
-                            <option class="t" value="login">login</option></a></li>
-                    </ul>
-                </nav>
+                <div class="navbar">
+                    <a href="#home">Home</a>
+                    <a href="#dash">Dashboard</a>
+                    <div class="dropdown">
+                      <button class="dropbtn">Register
+                        <i class="fa fa-caret-down"></i>
+                      </button>
+                      <div class="dropdown-content">
+                        <a href="registration.html">Patiant</a>
+                        <a href="registration.html">Doctor</a>
+                      </div>
+                    </div>
+                    <a href="patiantlogin.html">Patiant</a>
+                    <a href="doctorlogin.html">Doctor</a>
+                </div>
             </div>
             <h2>welcome to Blockchain health care system</h2>
             <div class="logo">
                 <img src="images/logo.png" alt="">
-                <!--<h1>logo</h1>-->
             </div>
 
         </div>
@@ -75,23 +67,6 @@
         </div>
 
     </div>
-    
-    <!--<div class="header">
-        <h1>Medical Records System</h1>
-    </div>
-    <div class="welcome">
-        <div>
-            <label><b>login as: </b></label>
-        </div>
-        <div>
-            <label><b>Username</b></label>
-            <input type="text" placeholder="Enter Username" name="uname" required>
-        </div>
-        <div>
-            <label><b>password</b></label>
-            <input type="text" placeholder="Enter password" name="password" required>
-        </div>
 
-    </div>-->
 </body>
 </html>
